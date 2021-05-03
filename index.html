@@ -15,7 +15,6 @@
     <link href="assets/styles/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/styles/css/owl.theme.css" rel="stylesheet">
     <link href="assets/styles/css/owl.transitions.css" rel="stylesheet">
-
     <!-- REVOLUTION STYLE SHEETS -->
 	<link rel="stylesheet" type="text/css" href="assets/styles/css/revolution/settings.css">
 
@@ -26,8 +25,11 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/css/revolution/navigation.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/css/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/css/revolution/fonts/font-awesome/css/font-awesome.min.css">
-
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+
+	<!-- @AlexandrepCumbane adicao de link butao -play and Stop-->
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<!-- LOADING SCREEN START -->
@@ -266,6 +268,7 @@
 	    </div>
 	    <!-- DIVIDER SECTION END -->
 	    <!-- TEAM SECTION START -->
+		<!-- adicao metodo play stop @AlexandrepCumbane -->
 	    <div class="row team bg-darkGrey pattern-darkGrey logo-container" id="team">
 	    	
 	    	<div class="container pBottom80">
@@ -286,18 +289,20 @@
 							
 							</svg>
 							<figcaption>
-								<h4 class="f-damion">Nome-Artista</h4>
+								<h4 class="f-damion">HERNANI</h4>
 								<p>Descrição- música</p>
 
 								<br><br><br><br><br><br><br><br><br><br><br><br>
-								
-								<audio controls>
-										
-										<source src="musics/2 Caras Ft Tulé - Le-ri-gô.mp3"audio/mpeg">
-										Your browser does not support the audio tag.
+
+								<!-- player  -->
+								<audio id="audio">
+									<source src="musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3" type="audio/mpeg">
 								</audio>
-								
-								<button class="f-nothingYouCouldDo" onclick="window.location.href = 'contact.html';">DOWNLOAD</button>
+
+								<div class="playStop" id="playPauseBTN" onclick="playPause()">&#9658;</div>
+
+
+								<button class="f-nothingYouCouldDo" onclick="window.location.href = 'musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3';">DOWNLOAD</button>
 							</figcaption>
 						</figure>
 					</div>
@@ -311,11 +316,13 @@
 
 								<br><br><br><br><br><br><br><br><br><br><br><br>
 								
-								<audio controls>
-										
-										<source src="musics/Dama do Bling - Lágrimas de Mãe (feat. Vekina) [ 2o17 ].mp3"audio/mpeg">
-										Your browser does not support the audio tag.
+								<!-- player  -->
+								<audio id="audio">
+									<source src="musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3" type="audio/mpeg">
 								</audio>
+
+								<div class="playStop" id="playPauseBTN" onclick="playPause()">&#9658;</div>
+
 								<button class="f-nothingYouCouldDo">DOWNLOAD</button>
 							</figcaption>
 						</figure>
@@ -330,11 +337,13 @@
 								
 								<br><br><br><br><br><br><br><br><br><br>
 								
-								<audio controls>
-										
-										<source src="musics/Mr. Bow - Balance.mp3"audio/mpeg">
-										Your browser does not support the audio tag.
+							<!-- player  -->
+								<audio id="audio">
+									<source src="musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3" type="audio/mpeg">
 								</audio>
+
+								<div class="playStop" id="playPauseBTN" onclick="playPause()">&#9658;</div>
+
 								<button class="f-nothingYouCouldDo">DOWNLOAD</button>
 							</figcaption>
 						</figure>
@@ -348,12 +357,13 @@
 								<p>Descrição- música</p>
 								
 								<br><br><br><br><br><br><br><br><br><br><br><br>
-								
-								<audio controls>
-										
-										<source src="musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3"audio/mpeg">
-										Your browser does not support the audio tag.
+								<!-- player  -->
+								<audio id="audio">
+									<source src="musics/HernÃ¢ni da Silva - Pwresha (Prod. Sigvh).mp3" type="audio/mpeg">
 								</audio>
+
+								<div class="playStop" id="playPauseBTN" onclick="playPause()">&#9658;</div>
+								
 								<button class="f-nothingYouCouldDo">DOWNLOAD</button>
 							</figcaption>
 						</figure>
@@ -2028,6 +2038,9 @@
 	<script type="text/javascript" src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
 	<script type="text/javascript" src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 
+	<!-- @AlexandrepCumbane adicionar link  -->
+	<script src="js/custom.js"></script>
+		<!-- end  -->
 	<!-- TWITTIE PLUGIN FOR TWEET SLIDER -->
     <script type="text/javascript">
         $('.tweets').twittie({

@@ -11,7 +11,8 @@ class Usuario{
                 $sql= $pdo->prepare($sql);
                 $sql->bindValue("email",$email);
                 $sql->bindValue("password", md5($password));
-                $sql->execute();
+                $sql->execute(); 
+                
 
                 if($sql->rowCount()>0){
 
